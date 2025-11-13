@@ -96,7 +96,7 @@ $ npm install -g @adobe/aio-cli
 $ aio COMMAND
 running command...
 $ aio (--version|-v)
-@adobe/aio-cli/11.0.0 darwin-arm64 node-v22.14.0
+@adobe/aio-cli/11.0.1 darwin-arm64 node-v24.9.0
 $ aio --help [COMMAND]
 USAGE
   $ aio COMMAND
@@ -3461,7 +3461,7 @@ ALIASES
   $ aio plugins discover
 ```
 
-_See code: [src/commands/discover.ts](https://github.com/adobe/aio-cli/blob/11.0.0/src/commands/discover.ts)_
+_See code: [src/commands/discover.ts](https://github.com/adobe/aio-cli/blob/11.0.1/src/commands/discover.ts)_
 
 ## `aio event`
 
@@ -4623,7 +4623,7 @@ DESCRIPTION
   Clears all installed plugins.
 ```
 
-_See code: [src/commands/rollback.ts](https://github.com/adobe/aio-cli/blob/11.0.0/src/commands/rollback.ts)_
+_See code: [src/commands/rollback.ts](https://github.com/adobe/aio-cli/blob/11.0.1/src/commands/rollback.ts)_
 
 ## `aio rt`
 
@@ -5546,23 +5546,23 @@ get API details
 
 ```
 USAGE
-  $ aio rt api get BASEPATHORAPINAME [--cert <value>] [--key <value>] [--apiversion <value>] [--apihost <value>]
-    [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help]
+  $ aio rt api get BASEPATHORAPINAME [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug <value>]
+    [-v] [--version] [--help]
 
 ARGUMENTS
   BASEPATHORAPINAME  The base path or api name
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   get API details
@@ -5579,8 +5579,8 @@ list route/apis for Adobe I/O Runtime
 
 ```
 USAGE
-  $ aio rt api list [BASEPATH] [RELPATH] [APIVERB] [--cert <value>] [--key <value>] [--apiversion <value>]
-    [--apihost <value>] [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
+  $ aio rt api list [BASEPATH] [RELPATH] [APIVERB] [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug
+    <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -5588,19 +5588,19 @@ ARGUMENTS
   APIVERB   (get|post|put|patch|delete|head|options) The http verb
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -l, --limit=<value>       only return LIMIT number of triggers
-  -s, --skip=<value>        exclude the first SKIP number of triggers from the result
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --json                output raw json
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -l, --limit=<value>  only return LIMIT number of triggers
+  -s, --skip=<value>   exclude the first SKIP number of triggers from the result
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --json           output raw json
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   list route/apis for Adobe I/O Runtime
@@ -5621,8 +5621,8 @@ list route/apis for Adobe I/O Runtime
 
 ```
 USAGE
-  $ aio rt api ls [BASEPATH] [RELPATH] [APIVERB] [--cert <value>] [--key <value>] [--apiversion <value>]
-    [--apihost <value>] [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
+  $ aio rt api ls [BASEPATH] [RELPATH] [APIVERB] [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug
+    <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -5630,19 +5630,19 @@ ARGUMENTS
   APIVERB   (get|post|put|patch|delete|head|options) The http verb
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -l, --limit=<value>       only return LIMIT number of triggers
-  -s, --skip=<value>        exclude the first SKIP number of triggers from the result
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --json                output raw json
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -l, --limit=<value>  only return LIMIT number of triggers
+  -s, --skip=<value>   exclude the first SKIP number of triggers from the result
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --json           output raw json
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   list route/apis for Adobe I/O Runtime
@@ -8295,23 +8295,23 @@ get API details
 
 ```
 USAGE
-  $ aio rt route get BASEPATHORAPINAME [--cert <value>] [--key <value>] [--apiversion <value>] [--apihost <value>]
-    [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help]
+  $ aio rt route get BASEPATHORAPINAME [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug <value>]
+    [-v] [--version] [--help]
 
 ARGUMENTS
   BASEPATHORAPINAME  The base path or api name
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   get API details
@@ -8328,8 +8328,8 @@ list route/apis for Adobe I/O Runtime
 
 ```
 USAGE
-  $ aio rt route list [BASEPATH] [RELPATH] [APIVERB] [--cert <value>] [--key <value>] [--apiversion <value>]
-    [--apihost <value>] [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
+  $ aio rt route list [BASEPATH] [RELPATH] [APIVERB] [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug
+    <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -8337,19 +8337,19 @@ ARGUMENTS
   APIVERB   (get|post|put|patch|delete|head|options) The http verb
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -l, --limit=<value>       only return LIMIT number of triggers
-  -s, --skip=<value>        exclude the first SKIP number of triggers from the result
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --json                output raw json
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -l, --limit=<value>  only return LIMIT number of triggers
+  -s, --skip=<value>   exclude the first SKIP number of triggers from the result
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --json           output raw json
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   list route/apis for Adobe I/O Runtime
@@ -8370,8 +8370,8 @@ list route/apis for Adobe I/O Runtime
 
 ```
 USAGE
-  $ aio rt route ls [BASEPATH] [RELPATH] [APIVERB] [--cert <value>] [--key <value>] [--apiversion <value>]
-    [--apihost <value>] [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
+  $ aio rt route ls [BASEPATH] [RELPATH] [APIVERB] [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug
+    <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -8379,19 +8379,19 @@ ARGUMENTS
   APIVERB   (get|post|put|patch|delete|head|options) The http verb
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -l, --limit=<value>       only return LIMIT number of triggers
-  -s, --skip=<value>        exclude the first SKIP number of triggers from the result
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --json                output raw json
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -l, --limit=<value>  only return LIMIT number of triggers
+  -s, --skip=<value>   exclude the first SKIP number of triggers from the result
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --json           output raw json
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   list route/apis for Adobe I/O Runtime
@@ -9959,23 +9959,23 @@ get API details
 
 ```
 USAGE
-  $ aio runtime api get BASEPATHORAPINAME [--cert <value>] [--key <value>] [--apiversion <value>] [--apihost <value>]
-    [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help]
+  $ aio runtime api get BASEPATHORAPINAME [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug <value>]
+    [-v] [--version] [--help]
 
 ARGUMENTS
   BASEPATHORAPINAME  The base path or api name
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   get API details
@@ -9994,8 +9994,8 @@ list route/apis for Adobe I/O Runtime
 
 ```
 USAGE
-  $ aio runtime api list [BASEPATH] [RELPATH] [APIVERB] [--cert <value>] [--key <value>] [--apiversion <value>]
-    [--apihost <value>] [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
+  $ aio runtime api list [BASEPATH] [RELPATH] [APIVERB] [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug
+    <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -10003,19 +10003,19 @@ ARGUMENTS
   APIVERB   (get|post|put|patch|delete|head|options) The http verb
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -l, --limit=<value>       only return LIMIT number of triggers
-  -s, --skip=<value>        exclude the first SKIP number of triggers from the result
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --json                output raw json
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -l, --limit=<value>  only return LIMIT number of triggers
+  -s, --skip=<value>   exclude the first SKIP number of triggers from the result
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --json           output raw json
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   list route/apis for Adobe I/O Runtime
@@ -10038,8 +10038,8 @@ list route/apis for Adobe I/O Runtime
 
 ```
 USAGE
-  $ aio runtime api ls [BASEPATH] [RELPATH] [APIVERB] [--cert <value>] [--key <value>] [--apiversion <value>]
-    [--apihost <value>] [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
+  $ aio runtime api ls [BASEPATH] [RELPATH] [APIVERB] [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug
+    <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -10047,19 +10047,19 @@ ARGUMENTS
   APIVERB   (get|post|put|patch|delete|head|options) The http verb
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -l, --limit=<value>       only return LIMIT number of triggers
-  -s, --skip=<value>        exclude the first SKIP number of triggers from the result
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --json                output raw json
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -l, --limit=<value>  only return LIMIT number of triggers
+  -s, --skip=<value>   exclude the first SKIP number of triggers from the result
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --json           output raw json
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   list route/apis for Adobe I/O Runtime
@@ -12768,23 +12768,23 @@ get API details
 
 ```
 USAGE
-  $ aio runtime route get BASEPATHORAPINAME [--cert <value>] [--key <value>] [--apiversion <value>] [--apihost <value>]
-    [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help]
+  $ aio runtime route get BASEPATHORAPINAME [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug <value>]
+    [-v] [--version] [--help]
 
 ARGUMENTS
   BASEPATHORAPINAME  The base path or api name
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   get API details
@@ -12801,8 +12801,8 @@ list route/apis for Adobe I/O Runtime
 
 ```
 USAGE
-  $ aio runtime route list [BASEPATH] [RELPATH] [APIVERB] [--cert <value>] [--key <value>] [--apiversion <value>]
-    [--apihost <value>] [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
+  $ aio runtime route list [BASEPATH] [RELPATH] [APIVERB] [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug
+    <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -12810,19 +12810,19 @@ ARGUMENTS
   APIVERB   (get|post|put|patch|delete|head|options) The http verb
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -l, --limit=<value>       only return LIMIT number of triggers
-  -s, --skip=<value>        exclude the first SKIP number of triggers from the result
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --json                output raw json
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -l, --limit=<value>  only return LIMIT number of triggers
+  -s, --skip=<value>   exclude the first SKIP number of triggers from the result
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --json           output raw json
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   list route/apis for Adobe I/O Runtime
@@ -12843,8 +12843,8 @@ list route/apis for Adobe I/O Runtime
 
 ```
 USAGE
-  $ aio runtime route ls [BASEPATH] [RELPATH] [APIVERB] [--cert <value>] [--key <value>] [--apiversion <value>]
-    [--apihost <value>] [-u <value>] [-i] [--debug <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
+  $ aio runtime route ls [BASEPATH] [RELPATH] [APIVERB] [--cert] [--key] [--apiversion] [--apihost] [-u] [-i] [--debug
+    <value>] [-v] [--version] [--help] [-l <value>] [-s <value>] [--json]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -12852,19 +12852,19 @@ ARGUMENTS
   APIVERB   (get|post|put|patch|delete|head|options) The http verb
 
 FLAGS
-  -i, --insecure            bypass certificate check
-  -l, --limit=<value>       only return LIMIT number of triggers
-  -s, --skip=<value>        exclude the first SKIP number of triggers from the result
-  -u, --auth=<value>        whisk auth
-  -v, --verbose             Verbose output
-      --apihost=<value>     whisk API host
-      --apiversion=<value>  whisk API version
-      --cert=<value>        client cert
-      --debug=<value>       Debug level output
-      --help                Show help
-      --json                output raw json
-      --key=<value>         client key
-      --version             Show version
+  -i, --insecure       bypass certificate check
+  -l, --limit=<value>  only return LIMIT number of triggers
+  -s, --skip=<value>   exclude the first SKIP number of triggers from the result
+  -u, --auth           whisk auth
+  -v, --verbose        Verbose output
+      --apihost        whisk API host
+      --apiversion     whisk API version
+      --cert           client cert
+      --debug=<value>  Debug level output
+      --help           Show help
+      --json           output raw json
+      --key            client key
+      --version        Show version
 
 DESCRIPTION
   list route/apis for Adobe I/O Runtime
@@ -13909,7 +13909,7 @@ DESCRIPTION
   - update user-installed plugins that are not core
 ```
 
-_See code: [src/commands/update.ts](https://github.com/adobe/aio-cli/blob/11.0.0/src/commands/update.ts)_
+_See code: [src/commands/update.ts](https://github.com/adobe/aio-cli/blob/11.0.1/src/commands/update.ts)_
 
 ## `aio where`
 
